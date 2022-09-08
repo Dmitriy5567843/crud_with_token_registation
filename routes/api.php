@@ -31,7 +31,7 @@ Route::group(['prefix' => '/v1'], function () {
     Route::get('/view/{id}', [UserController::class, 'view']);
     Route::get('/index', [UserController::class, 'index']);
     Route::put('/update/{id}', [UserController::class, 'update']);
-    Route::post('/checktoken', [UserController::class, 'checkToken']);
+
 });
 
 

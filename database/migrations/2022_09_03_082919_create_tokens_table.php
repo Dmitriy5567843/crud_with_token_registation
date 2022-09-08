@@ -18,8 +18,10 @@ return new class extends Migration
             $table->string('token', 100);
             $table->unsignedTinyInteger('used')->default(0);
             $table->timestamp('expiration_time');
-
             $table->timestamps();
+
+
+
         });
     }
 

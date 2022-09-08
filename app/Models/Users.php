@@ -11,7 +11,7 @@ class Users extends Model
         [
             'name',
             'password',
-        ];
 
+        ];
     use HasFactory;
 }
