@@ -37,7 +37,7 @@ class UserController extends Controller
         $tokenFromRequest = $request->get('token');
 
         $resultCheckToken = $this->tokenService->checkToken($tokenFromRequest);
-        if (gettype($resultCheckToken) === 'string') {
+        if (is_string($resultCheckToken) ) {
             return response()->json([
                 ['errors' =>
                     [
@@ -68,7 +68,7 @@ class UserController extends Controller
         $tokenFromRequest = $updateRequest->get('token');
 
         $resultCheckToken = $this->tokenService->checkToken($tokenFromRequest);
-        if (gettype($resultCheckToken) === 'string') {
+        if (is_string($resultCheckToken)) {
             return response()->json([
                 ['errors' =>
                     [

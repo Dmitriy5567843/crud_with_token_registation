@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\Api\LineController;
-use App\Http\Controllers\Api\StationController;
+
+use App\Http\Controllers\ApiTestController;
 use App\Http\Controllers\token\TokenController;
 use App\Http\Controllers\token\UserController;
 use Illuminate\Http\Request;
@@ -33,5 +33,5 @@ Route::group(['prefix' => '/v1'], function () {
     Route::put('/update/{id}', [UserController::class, 'update']);
 
 });
-
+Route::get('/test',[ApiTestController::class, 'Api']);
 
