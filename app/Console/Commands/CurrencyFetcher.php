@@ -26,6 +26,7 @@ class CurrencyFetcher extends Command
     {
 
 
+
 //        $curl = curl_init();
 //
 //        curl_setopt_array($curl, array(
